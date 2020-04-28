@@ -58,12 +58,16 @@
     		<groupId>org.apache.commons</groupId>
     		<artifactId>commons-lang3</artifactId>
    	   </dependency>
-   	   <dependency>
+   	   <dependency> <!--Biblioteca necessária para escrever os testes de API, para que seja possível fazer uma chamada no método -->
    	   		<groupId>io.rest-assured</groupId>
    	   		<artifactId>rest-assured</artifactId>
    	   		<scope>test</scope>
    	   </dependency>
-   </dependencies>
+       <dependency> <!-- Biblioteca necessária para obter a classe Flyway sendo possível obter o controle do import.sql -->
+    		<groupId>org.flywaydb</groupId>
+    		<artifactId>flyway-core</artifactId>
+   	   </dependency>
+  </dependencies>
 
 	<build>
 		<plugins>
@@ -72,7 +76,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 			<plugin> <!-- plugin necessário para que o maven entenda que os testes de Integração não sejam executados no momento do Build. -->
-				<artifactId>maven-failsafe-plugin</artifactId>
+				<artifactId>maven-failsafe-plugin</artifactId> <!-- Essa é uma ferramenta de versionamento de banco de dados. -->
 			</plugin>
 		</plugins>
 	</build>
