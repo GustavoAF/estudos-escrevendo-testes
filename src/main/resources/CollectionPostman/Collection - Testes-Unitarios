@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "2e1eba23-b9d4-4219-8a97-33b3e689d430",
+		"name": "Collection - Curso Especialista Spring Rest - Testes Unitários, API e Integração",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Recursos Utilizando variáveis de ambiente",
+			"item": [
+				{
+					"name": "Get Pessoas",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/estudos-testes/v1/pessoas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"estudos-testes",
+								"v1",
+								"pessoas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Pessoas Por Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/estudos-testes/v1/pessoas/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"estudos-testes",
+								"v1",
+								"pessoas",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastrar Pessoas",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "   {\n        \"nome\": \"Gustavo\",\n        \"sobreNome\": \"Ferreira\",\n        \"rua\": \"Garcia\",\n        \"numero\": \"93\",\n        \"cep\": \"3222160\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/estudos-testes/v1/pessoas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"estudos-testes",
+								"v1",
+								"pessoas"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
